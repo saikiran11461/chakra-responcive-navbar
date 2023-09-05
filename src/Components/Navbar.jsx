@@ -60,7 +60,7 @@ const Navbar = () => {
                 <Heading >Sai kiran</Heading>
             </Box>
             {
-                flag &&  <Flex  border={"2px solid tranprent"} mt={"4rem"}   justifyContent={"space-between"}  display={{base:"block", md:"none"}}>     
+                flag &&  <Flex width={"100%"}  border={"2px solid tranprent"} mt={"4rem"}   justifyContent={"space-between"}  display={{base:"block", md:"none"}}>     
                 <Box onClick={setFlag.off} position={"fixed"} right={"1rem"} top={"1rem"} >
                     <IconButton icon={<CloseIcon/>}></IconButton>
                 </Box>
