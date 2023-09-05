@@ -29,7 +29,7 @@ const Navbar = () => {
     ]
 
     const [flag,setFlag] = useBoolean(false);
-    console.log(flag)
+   
 
   return (
     <>
@@ -55,17 +55,17 @@ const Navbar = () => {
 
         
         
-         <Box align="left" >
+         <Box  align="left" >
             <Box display={{base:"block", md:"none"}}  pos={"fixed"} top={"1rem"} ml={"10px"}>
                 <Heading >Sai kiran</Heading>
             </Box>
             {
-                flag &&  <Flex width={"100%"}  border={"2px solid tranprent"} mt={"4rem"}   justifyContent={"space-between"}  display={{base:"block", md:"none"}}>     
+                flag &&  <Flex  width={"100%"}  border={"2px solid transprent"} mt={"4rem"}   justifyContent={"space-between"}  display={{base:"block", md:"none"}}>     
                 <Box onClick={setFlag.off} position={"fixed"} right={"1rem"} top={"1rem"} >
                     <IconButton icon={<CloseIcon/>}></IconButton>
                 </Box>
                     <Box  >
-                    <Flex data-aos="zoom-out-left"  width={"100%"} height={"100vh"}  flexDirection={"column"}  alignItems={"left"}>
+                    <Flex   width={"100%"} height={"100vh"}  flexDirection={"column"}  alignItems={"left"}>
                       {
                         Links.map((item)=>(
                              <Link><Button variant={"ghost"} ml={"10px"}>{item.lable}</Button></Link>
